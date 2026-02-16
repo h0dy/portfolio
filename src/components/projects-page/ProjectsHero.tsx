@@ -1,7 +1,6 @@
 import AlertBox from "@/components/global/AlertBox";
 import PageTitle from "@/components/global/PageTitle";
 import { CodeXml } from "lucide-react";
-import React from "react";
 const ProjectsHero = () => {
   return (
     <section className="mt-20">

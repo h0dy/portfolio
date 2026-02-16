@@ -1,6 +1,5 @@
-import React from "react";
-import ProjectsGridPage from "./ProjectsGridPage";
 import { projects } from "@/utils/links";
+import ProjectsGridPage from "./ProjectsGridPage";
 
 const ProjectsSectionPage = () => {
   return (
