@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const navLinkClasses = "hover:underline font-semibold capitalize";
 
 const NavItem = ({ label, href }: { label: string; href: string }) => {
   return (
     <li>
-      <Link className="hover:underline font-semibold capitalize" to={href}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${navLinkClasses} underline` : navLinkClasses
+        }
+        to={href}
+      >
         {label}
-      </Link>
+      </NavLink>
     </li>
   );
 };
