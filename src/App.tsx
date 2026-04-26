@@ -1,7 +1,10 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import { Contact, Error, Projects, Stats } from "./pages";
 import Landing from "./pages/LandingPage";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -11,7 +14,7 @@ const router = createBrowserRouter([
       {
         index: true, // make this page as the default for "/" route
         element: <Landing />,
-      }, 
+      },
       {
         path: "/projects",
         element: <Projects />,
@@ -30,7 +33,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
