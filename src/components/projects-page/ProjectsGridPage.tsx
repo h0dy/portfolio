@@ -1,5 +1,5 @@
 import type { Project } from "@/utils/types";
-import ProjectItem from "./ProjectItemPage";
+import ProjectItem from "../projects-page/ProjectItemPage";
 
 const ProjectsGrid = ({ list }: { list: Project[] }) => {
   return (
