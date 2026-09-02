@@ -24,8 +24,8 @@ const EmailBox = () => {
         <a href="mailto:hasanalsolwn@gmail.com">
           <Button className="cursor-pointer ">Email me</Button>
         </a>
-        <a download="CV" href="/resume.pdf">
-          <Button className="cursor-pointer">Download CV</Button>
+        <a download href="hassan-resume.pdf" className="cursor-pointer">
+          Download CV
         </a>
       </CardFooter>
     </Card>
