@@ -18,7 +18,7 @@ const ProjectsGrid = ({ list }: { list: Project[] }) => {
         <Link to="/projects">
           <Button
             variant="outline"
-            className="font-mono text-sm capitalize px-6 h-10 bg-transparent border transition-colors cursor-pointer"
+            className="text-sm capitalize px-6 h-10 bg-transparent border transition-colors cursor-pointer"
           >
             See All
           </Button>

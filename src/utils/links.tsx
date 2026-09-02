@@ -1,5 +1,7 @@
+import defaultImage from "@/assets/images/default.png";
 import pokedexcliImage from "@/assets/images/pokedexcli.png";
 import portfolioImage from "@/assets/images/portfolio.png";
+
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaAws,
@@ -49,7 +51,7 @@ export const languages: TechItem[] = [
     url: "https://docs.python.org/3/",
   },
   {
-    label: "golang",
+    label: "Go",
     icon: <FaGolang />,
     url: "https://go.dev/doc/",
   },
@@ -160,16 +162,25 @@ export const projects: Project[] = [
   },
   {
     id: "2",
+    label: "ReelView",
+    image: defaultImage,
+    description: "full-stack app for discovering, reviewing, and managing movies",
+    gitURL: "https://github.com/h0dy/ReelView",
+    tags: ["Tailwindcss", "React Router", "React", "Typescript", "Shadcn UI", "Go", "PostgreSQL"],
+    featured: true,
+  },
+  {
+    id: "3",
     label: "portfolio",
     image: portfolioImage,
     description: "you are in it :)",
     gitURL: "https://github.com/h0dy/hody-portfolio",
     projectURL: "https://hody.dev",
     tags: ["Tailwindcss", "React Router", "React", "Typescript", "Shadcn UI"],
-    featured: true,
+    featured: false,
   },
   {
-    id: "3",
+    id: "4",
     label: "Pokedex",
     description: "Pokedex is a command-line REPL",
     image: pokedexcliImage,

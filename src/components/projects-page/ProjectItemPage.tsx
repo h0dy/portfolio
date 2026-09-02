@@ -55,7 +55,7 @@ const ProjectItemPage = ({ project }: { project: Project }) => {
               <Badge
                 key={tag}
                 variant="outline"
-                className="font-mono px-2 py-0.5 rounded-md"
+                className="px-2 py-0.5 rounded-md"
               >
                 {tag}
               </Badge>
@@ -74,7 +74,7 @@ const ProjectItemPage = ({ project }: { project: Project }) => {
           >
             <Button
               variant="ghost"
-              className="w-full h-11 rounded-none font-mono transition-colors cursor-pointer border-r"
+              className="w-full h-11 rounded-none transition-colors cursor-pointer border-r"
             >
               <Github className="w-4 h-4 mr-2" />
               github
@@ -89,7 +89,7 @@ const ProjectItemPage = ({ project }: { project: Project }) => {
             <Button
               variant="ghost"
               disabled={isNotDeployed}
-              className="w-full h-11 rounded-none font-mono transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
+              className="w-full h-11 rounded-none transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <Link className="w-4 h-4 mr-2" />
               live
