@@ -1,6 +1,7 @@
 import defaultImage from "@/assets/images/default.png";
 import pokedexcliImage from "@/assets/images/pokedexcli.png";
 import portfolioImage from "@/assets/images/portfolio.png";
+import reelviewDemo from "@/assets/images/demo.gif";
 
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -163,7 +164,7 @@ export const projects: Project[] = [
   {
     id: "2",
     label: "ReelView",
-    image: defaultImage,
+    image: reelviewDemo,
     description: "full-stack app for discovering, reviewing, and managing movies",
     gitURL: "https://github.com/h0dy/ReelView",
     tags: ["Tailwindcss", "React Router", "React", "Typescript", "Shadcn UI", "Go", "PostgreSQL"],
